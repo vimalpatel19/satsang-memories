@@ -1,6 +1,7 @@
 import React from 'react';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 import Menu from './components/Menu';
 import Display from './components/Display';
@@ -16,11 +17,25 @@ const theme = createMuiTheme({
   },
 });
 
+const useStyles = makeStyles({
+  root: {
+    flexGrow: 1,
+    paddingLeft: 25,
+    paddingRight: 25,
+    paddingTop: 75,
+    paddingBottom: 25
+  }
+});
+
 function App() {
+  const classes = useStyles();
+
   return (
     <ThemeProvider theme={theme}>
       <Menu />
-      <Display />
+      <div className={classes.root}>
+        <Display />
+      </div>
     </ThemeProvider>
   );
 }
