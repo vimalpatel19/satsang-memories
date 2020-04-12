@@ -10,7 +10,7 @@ function Menu() {
             <AppBar style={{ alignItems: 'center' }}>
                 <Toolbar>
                     <Typography variant="h5" color="inherit">
-                        Satsang Memories
+                        Satsang Smruti
                     </Typography>
                 </Toolbar>
             </AppBar>
