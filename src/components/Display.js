@@ -8,8 +8,7 @@ import Fetch from '../hooks/Fetch';
 
 function Display() {
     const theme = useTheme();
-    //TODO: Need to move this to configuration file
-    const data = Fetch("");
+    const data = Fetch(process.env.REACT_APP_BACKEND);
 
     return(
         <ThemeProvider theme={theme}>

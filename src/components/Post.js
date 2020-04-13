@@ -6,7 +6,7 @@ import ShareIcon from '@material-ui/icons/Share';
 function Post(props) {
     return(
         <Card>
-            <CardActionArea>
+            <CardActionArea onClick={() => window.open(props.post.url, "_blank")}>
                 <CardMedia height="250" component="img" src={props.post.image} title={props.post.title} />
                 <CardContent>
                     <Typography gutterBottom variant="h5">

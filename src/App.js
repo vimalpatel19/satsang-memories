@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
     paddingLeft: 25,
     paddingRight: 25,
-    paddingTop: 75,
+    paddingTop: 110,
     paddingBottom: 25
   }
 });
