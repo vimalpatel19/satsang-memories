@@ -1,7 +1,16 @@
 import React from 'react';
-import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, IconButton } from '@material-ui/core';
+import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from '@material-ui/core';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
+
+function formatDate(dateStr) {
+    let date = new Date(dateStr);
+    return date.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+}
 
 function Post(props) {
     return(
@@ -25,6 +34,11 @@ function Post(props) {
                 <IconButton aria-label="share">
                     <ShareIcon />
                 </IconButton>
+                <Typography variant="body1" style={{ marginLeft: 'auto', paddingRight: 10 }}>
+                    <Box fontStyle="italic" fontWeight="fontWeightLight">
+                        {formatDate(props.post.date)}
+                    </Box>
+                </Typography>
             </CardActions>
         </Card>
     );

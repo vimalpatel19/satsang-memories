@@ -7,9 +7,10 @@ This website was created by starting off with the [create-react-app](https://git
 
 ### Future enhancements
 - [x] Application menu bar is hidden when scrolling down (re-appears when scrolling back up on the page)
-- [ ] Display date for each feed/post
+- [x] Display date for each feed/post
 - [ ] Implement the share button with the prominent social media apps (Whatsapp, Telegram, Twitter, E-mail, etc.)
 - [ ] Full implementation of LIKE button
 - [ ] Add paging (next and/or previous buttons)
 - [ ] Switch loading view to that using Material UI Skeleton from circular in-progress icon
 - [ ] Send alert(s) for new content (browser alerts?)
+- [ ] Change the menu bar font size depending on the device
