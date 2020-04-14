@@ -6,7 +6,7 @@ This website was created by starting off with the [create-react-app](https://git
 ##### Currently, the website can be accessed at: [Satsang Smruti](https://satsang-smruti.uc.r.appspot.com/)
 
 ### Future enhancements
-- [ ] Application menu bar is hidden when scrolling down (re-appears when scrolling back up on the page)
+- [x] Application menu bar is hidden when scrolling down (re-appears when scrolling back up on the page)
 - [ ] Display date for each feed/post
 - [ ] Implement the share button with the prominent social media apps (Whatsapp, Telegram, Twitter, E-mail, etc.)
 - [ ] Full implementation of LIKE button
