@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from '@material-ui/core';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
+
+import LikeButton from './LikeButton';
 
 function formatDate(dateStr) {
     let date = new Date(dateStr);
@@ -28,9 +29,7 @@ function Post(props) {
             </CardActionArea>
 
             <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                </IconButton>
+                <LikeButton />
                 <IconButton aria-label="share">
                     <ShareIcon />
                 </IconButton>
