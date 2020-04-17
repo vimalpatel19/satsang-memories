@@ -1,8 +1,10 @@
 import React from 'react';
-import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, IconButton, Box } from '@material-ui/core';
-import ShareIcon from '@material-ui/icons/Share';
+import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Box } from '@material-ui/core';
+import { isMobile } from 'react-device-detect';
 
 import LikeButton from './LikeButton';
+import ShareButton from './ShareButton';
+import CopyButton from './CopyButton';
 
 function formatDate(dateStr) {
     let date = new Date(dateStr);
@@ -29,10 +31,8 @@ function Post(props) {
             </CardActionArea>
 
             <CardActions disableSpacing>
+                { isMobile ? <ShareButton /> : <CopyButton link={props.post.url} /> }
                 <LikeButton />
-                <IconButton aria-label="share">
-                    <ShareIcon />
-                </IconButton>
                 <Typography variant="body1" style={{ marginLeft: 'auto', paddingRight: 10 }}>
                     <Box fontStyle="italic" fontWeight="fontWeightLight">
                         {formatDate(props.post.date)}

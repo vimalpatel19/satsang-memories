@@ -13,4 +13,4 @@ This website was created by starting off with the [create-react-app](https://git
 - [ ] Add paging (next and/or previous buttons)
 - [ ] Switch loading view to that using Material UI Skeleton from circular in-progress icon
 - [ ] Send alert(s) for new content (browser alerts?)
-- [ ] Change the menu bar font size depending on the device
+- [x] Change the menu bar font size depending on the device
