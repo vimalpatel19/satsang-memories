@@ -3,8 +3,8 @@ import { Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, 
 import { isMobile } from 'react-device-detect';
 
 import LikeButton from './LikeButton';
-import ShareButton from './ShareButton';
-import CopyButton from './CopyButton';
+import Mobile from './MobileShareButtons';
+import Desktop from './DesktopShareButtons';
 
 function formatDate(dateStr) {
     let date = new Date(dateStr);
@@ -31,8 +31,8 @@ function Post(props) {
             </CardActionArea>
 
             <CardActions disableSpacing>
-                { isMobile ? <ShareButton /> : <CopyButton link={props.post.url} /> }
                 <LikeButton />
+                { isMobile ? <Mobile link={props.post.url} title={props.post.title} /> : <Desktop link={props.post.url} title={props.post.title} description={props.post.description} /> }  
                 <Typography variant="body1" style={{ marginLeft: 'auto', paddingRight: 10 }}>
                     <Box fontStyle="italic" fontWeight="fontWeightLight">
                         {formatDate(props.post.date)}

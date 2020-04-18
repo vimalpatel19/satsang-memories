@@ -13,7 +13,8 @@
     "react": "^16.13.1",
     "react-device-detect": "^1.11.14",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-share": "^4.1.0"
   },
   "scripts": {
     "prestart": "npm install -g serve",

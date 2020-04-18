@@ -15,8 +15,8 @@ function LikeButton() {
     };
 
     return(
-        <IconButton aria-label="add to favorites">
-            <FavoriteIcon color={status.color} onClick={toggle} />
+        <IconButton aria-label="add to favorites" onClick={toggle}>
+            <FavoriteIcon color={status.color} />
         </IconButton>
     );
 }
