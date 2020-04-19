@@ -10,7 +10,8 @@ This website was created by starting off with the [create-react-app](https://git
 - [x] Display date for each feed/post
 - [x] Implement the share button with the prominent social media apps (Whatsapp, Telegram, Facebook, E-mail, etc.)
 - [x] Change the menu bar font size depending on the device
+- [x] Add paging (next and/or previous buttons)
 - [ ] Full implementation of LIKE button
-- [ ] Add paging (next and/or previous buttons)
+- [ ] Add error page for errors retrieving posts
 - [ ] Send alert(s) for new content (browser alerts?)
 - [ ] Switch loading view to that using Material UI Skeleton from circular in-progress icon

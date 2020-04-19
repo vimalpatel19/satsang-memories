@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { makeStyles } from '@material-ui/core/styles';
@@ -30,11 +30,27 @@ const useStyles = makeStyles({
 function App() {
   const classes = useStyles();
 
+  const [pages, setPages] = useState(0);
+
+  useEffect(() => {
+    const updatePageCount = async () => {
+      const response = await fetch(process.env.REACT_APP_BACKEND_COUNT);
+
+      if (response.status >= 200 && response.status <= 299) {
+        const data = await response.json();
+        const pages = Math.ceil(data.count / 10);
+        setPages(pages);
+      }
+    }
+
+    updatePageCount();
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <Menu />
       <div className={classes.root}>
-        <Display />
+        <Display pageCount={pages} />
       </div>
     </ThemeProvider>
   );
