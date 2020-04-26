@@ -11,7 +11,9 @@ This website was created by starting off with the [create-react-app](https://git
 - [x] Implement the share button with the prominent social media apps (Whatsapp, Telegram, Facebook, E-mail, etc.)
 - [x] Change the menu bar font size depending on the device
 - [x] Add paging (next and/or previous buttons)
-- [ ] Full implementation of LIKE button
+- [x] Full implementation of LIKE button
 - [ ] Add error page for errors retrieving posts
+- [ ] Display post for auspicious dates and festivals
+- [ ] Display post for "Today in history" feature
 - [ ] Send alert(s) for new content (browser alerts?)
 - [ ] Switch loading view to that using Material UI Skeleton from circular in-progress icon

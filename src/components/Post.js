@@ -31,7 +31,7 @@ function Post(props) {
             </CardActionArea>
 
             <CardActions disableSpacing>
-                <LikeButton />
+                <LikeButton id={props.post.id} likes={props.post.likes} />
                 { isMobile ? <Mobile link={props.post.url} title={props.post.title} /> : <Desktop link={props.post.url} title={props.post.title} description={props.post.description} /> }  
                 <Typography variant="body1" style={{ marginLeft: 'auto', paddingRight: 10 }}>
                     <Box fontStyle="italic" fontWeight="fontWeightLight">
